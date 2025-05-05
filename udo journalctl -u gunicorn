@@ -1,0 +1,11 @@
+[0;1;32m●[0m gunicorn.service - gunicorn daemon
+     Loaded: loaded (]8;;file://vmd166113/etc/systemd/system/gunicorn.service/etc/systemd/system/gunicorn.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Sun 2025-05-04 19:08:07 CEST; 27ms ago
+   Main PID: 354202 (gunicorn)
+      Tasks: 1 (limit: 4657)
+     Memory: 4.0M (peak: 4.0M)
+        CPU: 25ms
+     CGroup: /system.slice/gunicorn.service
+             └─[0;38;5;245m354202 /root/venv/bin/python3 /root/venv/bin/gunicorn --workers 3 --bind unix:/root/tweenleaf-dashboard/app.sock app:app[0m
+
+May 04 19:08:07 vmd166113 systemd[1]: Started gunicorn.service - gunicorn daemon.
