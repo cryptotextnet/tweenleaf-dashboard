@@ -14,5 +14,6 @@ COPY . .
 
 # Expose port and run with Flask’s built-in server
 EXPOSE 8080
-CMD ["python3", "app.py"]
+
+CMD ["gunicorn", "--workers", "3", "--bind", "0.0.0.0:8080", "app:app"]
 
