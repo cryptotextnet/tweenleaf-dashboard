@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:  # ← allows manual runs
 
 jobs:
   build-and-deploy:
